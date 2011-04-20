@@ -26,6 +26,11 @@ This plugin is based on the masked input plugin written by Josh Bush (digitalbus
             numericInput: false, //numericInput input direction style (input shifts to the left while holding the caret position)
             clearMaskOnLostFocus: true,
             definitions: {
+                'c': {
+                    "validator": "[6-9]",
+                    "cardinality": 1,
+                    'prevalidator': null
+                },
                 '9': {
                     "validator": "[0-9]",
                     "cardinality": 1,
